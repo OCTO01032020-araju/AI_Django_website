@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <style>
+    .box1{
+      position:absolute;
+      height: 130px;
+      width : 130px;
+      background-color: #5c88ce;
+      background-image: url('{% static 'images/history.jpg' %}');
+      background-size: 100% 100%;
+
+      border-radius: 50%;
+      left: 45%;
+      top: 75%;
+
+    }
+    .box2{
+      position:absolute;
+      height: 130px;
+      width : 130px;
+      background-color: #47e5a6;
+      left: 45%;
+      top:75%;
+      background-image: url('{% static 'images/project.jpg' %}');
+      background-size: 100% 100%;
+      border-radius: 60%;
+
+    }
+    .box3{
+      position:absolute;
+      height: 130px;
+      width : 130px;
+      background-color: #9fd858;
+      background-image: url('{% static 'images/overview.jpg' %}');
+      background-size: 100% 100%;
+      border-radius: 50%;
+      left: 44%;
+      top:75%;
+
+
+    }
+    .box4{
+      position:absolute;
+      height: 130px;
+      width : 130px;
+      background-color: #d28af2;
+      background-image: url('{% static 'images/research.jpg' %}');
+      background-size: 100% 100%;
+      border-radius: 50%;
+      left: 44%;
+      top: 75%;
+    }
+    .box5{
+      position:absolute;
+      height: 180px;
+      width : 180px;
+      background-color: #f4b942;
+      background-image: url('{% static 'images/project_logo.jpg' %}');
+      background-size: 100% 100%;
+      border-radius: 50%;
+      left: 42%;
+      top:70%;
+    }
+    .nav-item:hover{
+      text-decoration: underline;
+    }
+    @media(min-width:992px)  {
+
+    }
+    @media(min-width:768px)and (max-width:991px)
+    {
+      }
+      @media(min-width:575px) and (max-width:767px) {
+
+      }
+      @media(min-width:460px) and (max-width:574px) {
+
+      }
+
+    }
+    #arrow {
+         width: 150px;
+         height: 100px;
+         background-color: #f7f9f7;
+         border: 1px solid #999;
+         position: absolute;
+         border-radius: 5px;
+
+       }
+       #arrow:after {
+         content: '';
+         position: absolute;
+         top: 0px;
+         left: 147px;
+         width: 0;
+         height: 0;
+         border: 50px solid transparent;
+         border-left: 12px solid #f7f9f7;
+       }
+
+       #arrow:before {
+         content: '';
+         position: absolute;
+         top: 0px;
+         left: 147px;
+         width: 0;
+         height: 0;
+         border: 50px solid transparent;
+         border-left: 12px solid #999;
+       }
+       #arrow1 {
+            width: 150px;
+            height: 100px;
+            background-color: #f7f9f7;
+            border: 1px solid #999;
+            position: absolute;
+            border-radius: 5px;
+
+          }
+          #arrow1:after {
+            content: '';
+            position: absolute;
+            top: 0px;
+            left: 147px;
+            width: 0;
+            height: 0;
+            border: 50px solid transparent;
+            border-left: 12px solid #f7f9f7;
+          }
+
+          #arrow1:before {
+            content: '';
+            position: absolute;
+            top: 0px;
+            left: 147px;
+            width: 0;
+            height: 0;
+            border: 50px solid transparent;
+            border-left: 12px solid #999;
+          }
+          #arrow2 {
+               width: 150px;
+               height: 100px;
+               background-color: #f7f9f7;
+               border: 1px solid #999;
+               position: absolute;
+               border-radius: 5px;
+
+             }
+             #arrow2:after {
+               content: '';
+               position: absolute;
+               top: 0px;
+               left: 147px;
+               width: 0;
+               height: 0;
+               border: 50px solid transparent;
+               border-left: 12px solid #f7f9f7;
+             }
+
+             #arrow2:before {
+               content: '';
+               position: absolute;
+               top: 0px;
+               left: 147px;
+               width: 0;
+               height: 0;
+               border: 50px solid transparent;
+               border-left: 12px solid #999;
+             }
+             #arrow3 {
+                  width: 150px;
+                  height: 100px;
+                  background-color: #f7f9f7;
+                  border: 1px solid #999;
+                  position: absolute;
+                  border-radius: 5px;
+
+                }
+                #arrow3:after {
+                  content: '';
+                  position: absolute;
+                  top: 0px;
+                  left: 147px;
+                  width: 0;
+                  height: 0;
+                  border: 50px solid transparent;
+                  border-left: 12px solid #f7f9f7;
+                }
+
+                #arrow3:before {
+                  content: '';
+                  position: absolute;
+                  top: 0px;
+                  left: 147px;
+                  width: 0;
+                  height: 0;
+                  border: 50px solid transparent;
+                  border-left: 12px solid #999;
+                }
+
+       .logo{
+         height: 100px;
+         width: 100px;
+         background:url('{% static 'images/project_logo.jpg' %}');
+         background-size:100% 100%;
+         border-radius: 50px;
+
+       }
+       .mobilebtn{
+         display: none;
+       }
+       @media screen and (max-width:500px){
+         .box1, .box2, .box3, .box4, .box5{
+           display: none;
+         }
+         .mobilebtn{
+           text-align: center;
+           margin-top:100px;
+           display: block;
+
+         }
+       }
+
+
+  </style>
+    <script>
+    $(document).ready(function(){
+      $('.box1').hide();
+      $('.box2').hide();
+      $('.box3').hide();
+      $('.box4').hide();
+      $('.box3').mouseover(function(){
+        $('#arrow').fadeIn(2000);
+      });
+      $('.box4').mouseover(function(){
+        $('#arrow1').fadeIn(2000);
+      });
+      $('.box2').mouseover(function(){
+        $('#arrow2').fadeIn(2000);
+      });
+      $('.box1').mouseover(function(){
+        $('#arrow3').fadeIn(2000);
+      });
+
+
+
+      $(".box3").mouseleave(function(){
+        $('#arrow').fadeOut(2000);
+      });
+      $(".box4").mouseleave(function(){
+        $('#arrow1').fadeOut(2000);
+      });
+      $(".box2").mouseleave(function(){
+        $('#arrow2').fadeOut(2000);
+      });
+      $(".box1").mouseleave(function(){
+        $('#arrow3').fadeOut(2000);
+      });
+      $('.box5').mouseover(function(){
+        $('.box1').show();
+        $('.box2').show();
+        $('.box3').show();
+        $('.box4').show();
+
+        $('.box1').animate({
+            left:"70%"
+          },2000);
+        $('.box2').animate({
+            left:"20%"
+          },2000);
+        $('.box3').animate({
+            top:"25%"
+          },2000);
+        $('.box4').animate({
+            top:"115%"},2000);
+
+      });  });
+    </script>
+  </head>
+
+  <body  style="background:url('{% static 'images/background_image2.jpg' %}'); background-attachment:fixed; background-size: 100% 100%;">
+
+
+
+          <nav class="navbar navbar-expand-md  navbar-dark ">
+
+
+              <a href="{% url "index" %}" class="navbar-brand text-warning font-weight-bold logo"></a>
+              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsenavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse text-center" id="collapsenavbar">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a href="{% url "myapp:home" %}" class="nav-link text-white">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{% url "myapp:overview" %}" class="nav-link text-white">OVERVIEW</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{% url "myapp:history" %}" class="nav-link text-white">HISTORY</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{% url "myapp:research" %}" class="nav-link text-white">RESEARCH</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{% url "myapp:project" %}" class="nav-link text-white">PROJECTS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{% url "myapp:contact" %}" class="nav-link text-white">CONTACT US</a>
+                  </li>
+                </ul>
+
+            </div>
+          </nav>
+
+
+          <div class='mobilebtn'>
+            <a href="{% url "myapp:home" %}" class='btn btn-success'>Click Here to Start</a>
+          </div>
+
+
+      
+      <div style=" left: 32%;top:118%;display:none;" id="arrow1">
+<span style="font-size:15px; font-family:cursive;">Notes And Article About Research On AI</span>
+      </div>
+      <div style=" left: 8%;top:77%;display:none; "  id="arrow2">
+<span style="font-size:15px; font-family:cursive;">Get the information About projects on AI</span>
+      </div>
+      <div style=" left: 58%;top:77%;display:none;"id="arrow3">
+<span style="font-size:15px; font-family:cursive;">Evolution Of Artificial Intelligence</span>
+      </div>
+
+      <a href="{% url "myapp:history" %}"><div class="box1">
+      </div></a>
+      <a href="{% url "myapp:project" %}"><div class="box2">
+      </div></a>
+      <a href="{% url "myapp:overview" %}"><div class="box3">
+      </div></a>
+      <a href="{% url "myapp:research" %}"><div class="box4">
+      </div></a>
+          <a href="{% url "myapp:home" %}"><div class="box5">
+          </div></a>
+
+</div>
+</div>
+
+    </body>
+
+</html>

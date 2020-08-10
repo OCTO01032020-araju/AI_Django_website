@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+{% extends "nav.html" %}
+{% load staticfiles %}
+
+{% block body_block %}
+      <div style="margin-top:90px;" class = "carousel slide box" id = 'myid' data-ride = "carousel">
+        <ul class = "carousel-indicators">
+          <li class = "active"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <div class = "carousel-inner">
+          <div class = "carousel-item active">
+            <img src = '{% static 'images/r1.jpg' %}' height = "400px" width = "100%" alt="image1">
+          </div>
+          <div class = "carousel-item">
+            <img src='{% static 'images/r2.jpg' %}' height = "400px" width = "100%" alt = "image2">
+          </div>
+          <div class ="carousel-item">
+            <img src =  '{% static 'images/r3.jpg' %}' height = "400px" width = "100%" alt= "image3">
+          </div>
+          <div class = "carousel-item">
+            <img src = '{% static 'images/r4.jpg' %}' height = "400px" width  = "100%" alt = "image4">
+          </div>
+
+          <div class = "carousel-item">
+            <img src = '{% static 'images/research_slider5.jpg' %}' height = "400px" width  = "100%" alt = "image6">
+          </div>
+          <a href = "#myid" class = "carousel-control-prev" data-slide = 'prev'>
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a href = "#myid" class="carousel-control-next" data-slide = "next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+      </div>
+
+      <div style="background:url('{% static 'images/bdfr.jpg' %}'); background-attachment:fixed; background-size: 100% 100%;">
+      <div style="color:white;padding-top:50px;padding-right: 70px;padding-left:70px;font-family: cursive;text-align:justify;"  class="col-md-12 col-lg-12 col-sm-12 " >
+        <h2> Researches going on Artificial Intelligence(AI)</h2>
+      <p style="padding-top:30px;">
+      The Encyclopedia Britannica states, “artificial intelligence (AI), the ability of a digital computer or computer-controlled robot to perform tasks commonly associated with intelligent beings.” Intelligent beings are those that can adapt to changing circumstances.<br>
+      <br>
+
+
+
+
+
+
+      Discussions of artificial intelligence (AI) have created a certain amount of unease by those who fear it will quickly evolve from being a benefit to human society to taking over. Even Stephen Hawking and Elon Musk have warned of AI’s threats. However, we’re not all operating from the same definition of the term and while the foundation is generally the same, the focus of artificial intelligence shifts depending on the entity that provides the definition. Let’s look at 6 definitions of artificial intelligence and see how some of the industry’s leaders are focusing their AI research efforts.<br>
+      Adobe Stock<br>
+      
+      John McCarthy first coined the term artificial intelligence in 1956 when he invited a group of researchers from a variety of disciplines including language simulation, neuron nets, complexity theory and more to a summer workshop called the Dartmouth Summer Research Project on Artificial Intelligence to discuss what would ultimately become the field of AI. At that time, the researchers came together to clarify and develop the concepts around “thinking machines” which up to this point had been quite divergent. McCarthy is said to have picked the name artificial intelligence for its neutrality; to avoid highlighting one of the tracks being pursued at the time for the field of “thinking machines” that included cybernetics, automata theory and complex information processing. The proposal for the conference said, “The study is to proceed on the basis of the conjecture that every aspect of learning or any other feature of intelligence can in principle be so precisely described that a machine can be made to simulate it.”
+      <br>
+      Today, modern dictionary definitions focus on AI being a sub-field of computer science and how machines can imitate human intelligence (being human-like rather than becoming human). The English Oxford Living Dictionary gives this definition: “The theory and development of computer systems able to perform tasks normally requiring human intelligence, such as visual perception, speech recognition, decision-making, and translation between languages.”
+      ADVERTISING<br>
+      Merriam-Webster defines artificial intelligence this way:<br>
+      1. &emsp; &emsp;      A branch of computer science dealing with the simulation of intelligent behavior in computers.<br>
+      2. &emsp;   &emsp;The capability of a machine to imitate intelligent human behavior.<br>
+      The Encyclopedia Britannica states, “artificial intelligence (AI), the ability of a digital computer or computer-controlled robot to perform tasks commonly associated with intelligent beings.” Intelligent beings are those that can adapt to changing circumstances.
+      Definitions of artificial intelligence begin to shift based upon the goals that are trying to be achieved with an AI system. Generally, people invest in AI development for one of these three objectives:<br>
+      1. &emsp; &emsp;	      Build systems that think exactly like humans do (“strong AI”)<br>
+      2. &emsp; &emsp;	      Just get systems to work without figuring out how human reasoning works (“weak AI”)<br>
+      3. &emsp; &emsp;	      Use human reasoning as a model but not necessarily the end goal<br>
+      Turns out that the bulk of the AI development happening today by industry leaders falls under the third objective and uses human reasoning as a guide to provide better services or create better products rather trying to achieve a perfect replica of the human mind.<br>
+      Amazon builds a lot of its business on machine-learning systems (as a subset of AI) and defines AI as “the field of computer science dedicated to solving cognitive problems commonly associated with human intelligence, such as learning, problem solving, and pattern recognition.” Machine learning is so important to Amazon, they stated, “Without ML, Amazon.com couldn’t grow its business, improve its customer experience and selection, and optimize its logistic speed and quality.”<br>
+      While some of the major tech companies haven’t published a dictionary-type definition for AI, we can extrapolate how they define the importance of AI by reviewing their research areas.<br>
+      Machine and deep learning are the priority for Google AI and its tools to “create smarter, more useful technology and help as many people as possible” from translations to healthcare to making our smartphones even smarter. Facebook AI Research is committed to “advancing the file of machine intelligence and are creating new technologies to give people better ways to communicate.” IBM’s three areas of focus include AI Engineering, building scalable AI models and tools; AI Tech where the core capabilities of AI such as natural language processing, speech and image recognition and reasoning are explored and AI Science, where expanding the frontiers of AI is the focus.<br>
+      In 2016, several industry leaders including Amazon, Apple, DeepMind, Google, IBM and Microsoft joined together to create Partnership on AI to Benefit People and Society to develop and share best practices, advance public understanding, provide an open platform for discussion and to identify aspirational effort in AI for socially beneficial purposes.<br>
+      Those working with AI today make it a priority to define the field for the problems it will solve and the benefits the technology can have for society. It’s no longer a primary objective for most to get to AI that operates just like a human brain, but to use its unique capabilities to enhance our world.<br>
+      Bernard Marr is a best-selling author, keynote speaker and business consultant in big data, analytics and enterprise performance. His new books are 'Big Data' 'Key Business Analytics'<br>
+
+
+      </p>
+      </div>
+
+      </div>
+
+      </div>
+      <footer class="footer">
+        <h6 class="text-center">© 2005-2011 ARTI-FACT ALL RIGHTS RESERVED</h6>
+      </footer>
+
+{% endblock %}

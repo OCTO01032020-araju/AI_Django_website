@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+{% extends "nav.html" %}
+{% load staticfiles %}
+
+{% block body_block %}
+  <div style="margin-top:80px;" class = "carousel slide box" id = 'myid' data-ride = "carousel">
+    <ul class = "carousel-indicators">
+      <li class = "active"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+
+    </ul>
+    <div class = "carousel-inner">
+      <div class = "carousel-item active">
+        <img src = '{% static 'images/p1.jpg' %}' height = "400px" width = "100%" alt="image1">
+      </div>
+      <div class = "carousel-item">
+        <img src='{% static 'images/p2.jpg' %}' height = "400px" width = "100%" alt = "image2">
+      </div>
+      <div class ="carousel-item">
+        <img src =  '{% static 'images/p3.jpg' %}' height = "400px" width = "100%" alt= "image3">
+      </div>
+      <div class = "carousel-item">
+        <img src = '{% static 'images/p4.jpg' %}' height = "400px" width  = "100%" alt = "image4">
+      </div>
+
+      <a href = "#myid" class = "carousel-control-prev" data-slide = 'prev'>
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a href = "#myid" class="carousel-control-next" data-slide = "next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </div>
+
+    <div style="background:url('{% static 'images/pbg.jpg' %}'); background-attachment:fixed; background-size: 100% 100%;">
+    <div style="color:white;padding-top:50px; padding-left:70px;padding-right: 70px;font-family: cursive;text-align:justify;"  class="col-md-12 col-lg-12 col-sm-12 " >
+      <h2> OUR PROJECTS ON ARITIFICIAL INTELLIGENCE</h2>
+<p style="padding-top:0px;">
+  <h3 style="text-decoration: underline">Brief Description of project:</h3>
+  This project is designed to provide virtual assistance to the users in terms of providing all the information and data searched. This project also have features like hearing and speaking. Some modules are also given to this project. It has connectivity with internet so the data from any site can be accessed through this module.
+
+             This project is mainly based on artificial intelligence with assistant named as ASA. ASA is able to speak as well as hear the queries of users. It also provides the option to search through keyboard. This virtual assistant has its coding in python with many packages and modules.
+     <br>
+  <h4 style="text-decoration: underline; padding-top:10px">Field Of Project:
+  </h4>
+This project is mainly used to provide assistant to users. This is an project which runs on every platform. This project is free of cost. ASA has good quality of voice which is easily understandable. It has easy access over the websites and accepts the commands easily. This module can be used in phones as well as in pc’s too. All these function of this project makes it eye catchy. Most important function of this module is it can be used by every one easily.   
+<br>
+<h5 style="text-decoration: underline;padding-top:10px">Use of ASA virtual assistant:</h5>
+1.Provide information such as weather, facts from e.g. Wikipedia.<br>
+2.Can provide the answer of search question by speaking.<br>
+3.One can get answer of query without using keyboard.<br>
+4.It is easy to operate<br>
+
+<h6 style="text-decoration: underline;padding-top:10px;font-size:30px;">SCREENSHOTS:</h6>
+<img src = '{% static 'images/Picture21.jpg' %}' height = "200px" width = "50%" alt="image1"><br><br>
+<img src = '{% static 'images/Picture11.jpg' %}' height = "200px" width = "50%" alt="image1"><br><br>
+<img src = '{% static 'images/Picture31.jpg' %}' height = "200px" width = "50%" alt="image1"><br><br>
+<img src = '{% static 'images/Picture41.jpg' %}' height = "200px" width = "50%" alt="image1"><br><br>
+<img src = '{% static 'images/Picture51.jpg' %}' height = "200px" width = "50%" alt="image1"><br>
+<h7 style="text-decoration: underline;padding-top:10px; font-size:25px">Method of interaction:
+</h7><br>
+ASA Virtual assistant make work via:<br>
+* Text (online chat), especially in an instant messaging app or other app<br>
+* Voice, by the use of microphones.
+
+
+</p>
+  </div>
+
+</div>
+<footer class="footer">
+  <h6 class="text-center">© 2005-2011 ARTI-FACT ALL RIGHTS RESERVED</h6>
+</footer>
+{% endblock %}

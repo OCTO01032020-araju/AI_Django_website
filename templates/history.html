@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+{% extends "nav.html" %}
+{% load staticfiles %}
+
+{% block body_block %}
+        <div style="margin-top:90px;" class = "carousel slide box" id = 'myid' data-ride = "carousel">
+          <ul class = "carousel-indicators">
+            <li class = "active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <div class = "carousel-inner">
+            <div class = "carousel-item active">
+              <img src ='{% static 'images/john.png' %}' height = "400px" width = "100%" alt="image1">
+              <div class="carousel-caption" >
+            <h3>John McCarthy</h3>
+            <p>One Of The "Founding Fathers" Of Artificial Intelligence</p>
+          </div>
+            </div>
+            <div class = "carousel-item">
+              <img src='{% static 'images/history1.jpg' %}' height = "400px" width = "100%" alt = "image2">
+            </div>
+            <div class ="carousel-item">
+              <img src =  '{% static 'images/history2.jpg' %}' height = "400px" width = "100%" alt= "image3">
+            </div>
+            <div class = "carousel-item">
+              <img src = '{% static 'images/history3.jpg' %}' height = "400px" width  = "100%" alt = "image4">
+            </div>
+
+            <div class = "carousel-item">
+              <img src = '{% static 'images/history4.jpg' %}' height = "400px" width  = "100%" alt = "image6">
+            </div>
+            <a href = "#myid" class = "carousel-control-prev" data-slide = 'prev'>
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href = "#myid" class="carousel-control-next" data-slide = "next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row" style="background:url('{% static 'images/historybg.jpg' %}'); background-size:100% 100%; background-attachment:fixed;">
+
+        <div class="col-md-12 px-0" >
+          <div style="color:white;padding-top:100px; padding-left:70px; padding-right: 70px;font-family: cursive;text-align:justify;"  >
+          <h2> History of Artificial Intelligence (AI) </h2>
+    <p></p>
+    <p style="padding-top:30px;">
+      The history of Artificial Intelligence (AI) began in antiquity, with myths, stories and rumors of artificial beings endowed with intelligence or consciousness by master craftsmen; as Pamela McCorduck writes, AI began with "an ancient wish to forge the gods."<br>
+
+The seeds of modern AI were planted by classical philosophers who attempted to describe the process of human thinking as the mechanical manipulation of symbols. This work culminated in the invention of the programmable digital computer in the 1940s, a machine based on the abstract essence of mathematical reasoning. This device and the ideas behind it inspired a handful of scientists to begin seriously discussing the possibility of building an electronic brain.<br>
+
+The field of AI research was founded at a workshop held on the campus of Dartmouth College during the summer of 1956. Those who attended would become the leaders of AI research for decades. Many of them predicted that a machine as intelligent as a human being would exist in no more than a generation and they were given millions of dollars to make this vision come true.<br>
+
+Eventually it became obvious that they had grossly underestimated the difficulty of the project due to computer hardware limitations. In 1973, in response to the criticism of James Lighthill and ongoing pressure from congress, the U.S. and British Governments stopped funding undirected research into artificial intelligence, and the difficult years that followed would later be known as an "AI winter". Seven years later, a visionary initiative by the Japanese Government inspired governments and industry to provide AI with billions of dollars, but by the late 80s the investors became disillusioned by the absence of the needed computer power (hardware) and withdrew funding again.<br>
+
+Investment and interest in AI boomed in the first decades of the 21st century, when machine learning was successfully applied to many problems in academia and industry due to the presence of powerful computer hardware. As in previous "AI summers", some observers (such as Ray Kurzweil[2]) predicted the imminent arrival of artificial general intelligence: a machine with intellectual capabilities that exceed the abilities of human beings.<br>
+<br>
+
+
+
+    <br>The dream of artificial intelligence was first thought of in Indian philosophies like those of Charvaka, a famous philosophy tradition dating back to 1500 BCE and surviving documents around 600 BCE. McCorduck (2004) writes "artificial intelligence in one form or another is an idea that has pervaded intellectual history, a dream in urgent need of being realized," expressed in humanity's myths, legends, stories, speculation and clockwork automatons.[3]
+
+<br>AI in myth, fiction and speculation
+<br>Main article: Artificial intelligence in fiction
+<br>Mechanical men and artificial beings appear in Greek myths, such as the golden robots of Hephaestus and Pygmalion's Galatea.[4] In the Middle Ages, there were rumors of secret mystical or alchemical means of placing mind into matter, such as Jābir ibn Hayyān's Takwin, Paracelsus' homunculus and Rabbi Judah Loew's Golem.[5] By the 19th century, ideas about artificial men and thinking machines were developed in fiction, as in Mary Shelley's Frankenstein or Karel Čapek's R.U.R. (Rossum's Universal Robots),[6] and speculation, such as Samuel Butler's "Darwin among the Machines."[7] AI has continued to be an important element of science fiction into the present.
+<br>
+<br>
+<h3> Automaton</h3>
+<br><br>
+
+Realistic humanoid automatons were built by craftsman from every civilization, including Yan Shi,[8] Hero of Alexandria,[9] Al-Jazari[10] , Pierre Jaquet-Droz, and Wolfgang von Kempelen.[11] The oldest known automatons were the sacred statues of ancient Egypt and Greece. The faithful believed that craftsman had imbued these figures with very real minds, capable of wisdom and emotion—Hermes Trismegistus wrote that "by discovering the true nature of the gods, man has been able to reproduce it."<br>
+
+Formal reasoning<br>
+Artificial intelligence is based on the assumption that the process of human thought can be mechanized. The study of mechanical—or "formal"—reasoning has a long history. Chinese, Indian and Greek philosophers all developed structured methods of formal deduction in the first millennium BCE. Their ideas were developed over the centuries by philosophers such as Aristotle (who gave a formal analysis of the syllogism), Euclid (whose Elements was a model of formal reasoning), al-Khwārizmī (who developed algebra and gave his name to "algorithm") and European scholastic philosophers such as William of Ockham and Duns Scotus.[14]
+<br>
+Majorcan philosopher Ramon Llull (1232–1315) developed several logical machines devoted to the production of knowledge by logical means;[15] Llull described his machines as mechanical entities that could combine basic and undeniable truths by simple logical operations, produced by the machine by mechanical meanings, in such ways as to produce all the possible knowledge.[16] Llull's work had a great influence on Gottfried Leibniz, who redeveloped his ideas.[17]
+<br>
+
+<br>Gottfried Leibniz, who speculated that human reason could be reduced to mechanical calculation
+<br>In the 17th century, Leibniz, Thomas Hobbes and René Descartes explored the possibility that all rational thought could be made as systematic as algebra or geometry.[18] Hobbes famously wrote in Leviathan: "reason is nothing but reckoning".[19] Leibniz envisioned a universal language of reasoning (his characteristica universalis) which would reduce argumentation to calculation, so that "there would be no more need of disputation between two philosophers than between two accountants. For it would suffice to take their pencils in hand, down to their slates, and to say each other (with a friend as witness, if they liked): Let us calculate."[20] These philosophers had begun to articulate the physical symbol system hypothesis that would become the guiding faith of AI research.
+<br>
+<br>In the 20th century, the study of mathematical logic provided the essential breakthrough that made artificial intelligence seem plausible. The foundations had been set by such works as Boole's The Laws of Thought and Frege's Begriffsschrift. Building on Frege's system, Russell and Whitehead presented a formal treatment of the foundations of mathematics in their masterpiece, the Principia Mathematica in 1913. Inspired by Russell's success, David Hilbert challenged mathematicians of the 1920s and 30s to answer this fundamental question: "can all of mathematical reasoning be formalized?"[14] His question was answered by Gödel's incompleteness proof, Turing's machine and Church's Lambda calculus.[14][21]
+<br>
+<br>
+The ENIAC, at the Moore School of Electrical Engineering. This photo has been artificially darkened, obscuring details such as the women who were present and the IBM equipment in use.[22]
+<br>Their answer was surprising in two ways. First, they proved that there were, in fact, limits to what mathematical logic could accomplish. But second (and more important for AI) their work suggested that, within these limits, any form of mathematical reasoning could be mechanized. The Church-Turing thesis implied that a mechanical device, shuffling symbols as simple as 0 and 1, could imitate any conceivable process of mathematical deduction. The key insight was the Turing machine—a simple theoretical construct that captured the essence of abstract symbol manipulation. This invention would inspire a handful of scientists to begin discussing the possibility of thinking machines.[14][23]
+<br>
+<h3>history of computer hardware and history of computer science</h3>
+Calculating machines were built in antiquity and improved throughout history by many mathematicians, including (once again) philosopher Gottfried Leibniz. In the early 19th century, Charles Babbage designed a programmable computer (the Analytical Engine), although it was never built. Ada Lovelace speculated that the machine "might compose elaborate and scientific pieces of music of any degree of complexity or extent".[24] (She is often credited as the first programmer because of a set of notes she wrote that completely detail a method for calculating Bernoulli numbers with the Engine.)
+<br>
+The first modern computers were the massive code breaking machines of the Second World War (such as Z3, ENIAC and Colossus). The latter two of these machines were based on the theoretical foundation laid by Alan Turing[25] and developed by John von Neumann.[26]
+<br>
+The birth of artificial intelligence 1952–1956
+<br>
+<br>The IBM 702: a computer used by the first generation of AI researchers.
+<br>In the 1940s and 50s, a handful of scientists from a variety of fields (mathematics, psychology, engineering, economics and political science) began to discuss the possibility of creating an artificial brain. The field of artificial intelligence research was founded as an academic discipline in 1956.
+          </p>
+
+</div>
+
+      </div>
+
+    </div>
+    <footer class="footer">
+      <h6 class="text-center">© 2005-2011 ARTI-FACT ALL RIGHTS RESERVED</h6>
+    </footer>
+
+  {% endblock %}
