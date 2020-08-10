@@ -1,0 +1,1 @@
+This is the sample code of a "ARTIFICIAL WEBSITE" created using HTML,CSS,BOOTSTRAP Aand JavaScript as frontend and "Django" as backend. This website is created for the people who wants to learn about Artificial Website. 
